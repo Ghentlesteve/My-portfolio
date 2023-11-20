@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Personal Portfolio</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+
+
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand d-block d-lg-none">
+            <h1 class="text-primary fw-bold m-0">Kwenev Stephen</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#skill" class="nav-item nav-link">Skills</a>
+                <a href="#service" class="nav-item nav-link">Services</a>
+            </div>
+            <a href="index.html" class="navbar-brand bg-light py-3 px-4 mx-3 d-none d-lg-block">
+                <h1 class="text-success fw-bold m-0">Kwenev Stephen</h1>
+            </a>
+            <div class="navbar-nav me-auto py-0">
+                <a href="#project" class="nav-item nav-link">Projects</a>
+                <!-- <a href="#team" class="nav-item nav-link">Team</a> -->
+                <a href="#testimonial" class="nav-item nav-link">Team</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-light my-5 mt-0 h-100 pt-5   " id="home">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 py-6 pb-0 pt-lg-0">
+                    <h3 class="text-primary mb-3 display-6">Hello, I'm</h3>
+                    <h1 class="display-3 mb-3">Kwenev Stephen</h1>
+                    <h2 class="typed-text-output d-inline"></h2>
+                    <div class="typed-text d-none">Web Designer, Front End Developer, DHIS2 Implementer, Data Analyst</div>
+                    <div class="d-flex align-items-center pt-5">
+                        <a href="KWENEV STEPHEN.pdf" class="btn btn-primary py-3 px-4 me-5" download="Kwenev_Steve.pdf">Download CV</a>
+                        <!-- <button type="button" class="btn-play" data-bs-toggle="modal"
+                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                            <span></span>
+                        </button> -->
+                        <!-- <h5 class="ms-4 mb-0 d-none d-sm-block">Play Video</h5> -->
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="img/BG-header-.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+                            allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl pt-3" id="about">
+        <div class="container">
+            <h1 class="display-5 mb-0 pb-5 text-center">About Me</h1>
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="d-flex align-items-center mb-5">
+                        <div class="years flex-shrink-0 text-center me-4">
+                            <h1 class="display-1 mb-0">3</h1>
+                            <h5 class="mb-0">Years</h5>
+                        </div>
+                        <h3 class="lh-base mb-0">of working experience as a web designer & developer/DHIS2 Implementer</h3>
+                    </div>
+                    <p class="mb-4">I'm a web developer with a passion for creating beautiful and interactive websites. I'm skilled in HTML, CSS, JavaScript, and React, which allows me to build a wide range of websites, from simple landing pages to complex web applications. I'm also a creative thinker and have a knack for coming up with innovative solutions to web development challenges</p>
+                    
+                    <a class="btn btn-primary py-3 px-5 mt-3" href="/www.linkedin.com/in/stephen-kwenev-85315b278/">Read More</a>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="row g-3 mb-4">
+                        <div class="col-sm-6">
+                            <img class="img-fluid rounded" src="img/IMG_3738.jpeg" alt="">
+                        </div>
+                        <div class="col-sm-6">
+                            <img class="img-fluid rounded" src="img/IMG_3750.jpeg" alt="">
+                        </div>
+                    </div>
+                    <h5>Data Analysis/Visualiztion with Python, Excel, mySql and PowerBI</h5>
+                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Afordable Prices</p>
+                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>High Quality Product</p>
+                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>On Time Project Delivery</p>
+                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Very friendly Terms and Conditions</p>
+                    <!-- <div class="d-flex align-items-center mb-3">
+                        <h5 class="border-end pe-3 me-3 mb-0">Happy Clients</h5>
+                        <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">1234</h2>
+                    </div>
+                    <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam amet diam ipsum clita labore dolor duo clita.</p>
+                    <div class="d-flex align-items-center mb-3">
+                        <h5 class="border-end pe-3 me-3 mb-0">Projects Completed</h5>
+                        <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">1234</h2>
+                    </div>
+                    <p class="mb-0">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam amet diam ipsum clita labore dolor duo clita.</p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Expertise Start -->
+    <div class="container-xxl py-5 pb-5" id="skill">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <h1 class="display-5 mb-5">Skills & Experience</h1>
+                    <p class="mb-4">Over time, i have gained a lot of experiences working as a Developer, i spent a good amount of time woking on the implementation and customization of DHIS2 systems and also did a few data analysis projects.</p>
+                    <h3 class="mb-4">My Skills</h3>
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">HTML & CSS</h6>
+                                    <h6 class="font-weight-bold">95%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Python</h6>
+                                    <h6 class="font-weight-bold">90%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">JavaScript</h6>
+                                    <h6 class="font-weight-bold">80%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">React</h6>
+                                    <h6 class="font-weight-bold">75%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">DHIS2</h6>
+                                    <h6 class="font-weight-bold">80%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Excel, MySQL, PowerBI</h6>
+                                    <h6 class="font-weight-bold">75%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <ul class="nav nav-pills rounded border border-2 border-primary mb-5">
+                        <li class="nav-item w-50">
+                            <button class="nav-link w-100 py-3 fs-5 active" data-bs-toggle="pill" href="#tab-1">Experience</button>
+                        </li>
+                        <li class="nav-item w-50">
+                            <button class="nav-link w-100 py-3 fs-5 " data-bs-toggle="pill" href="#tab-2">Education</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row gy-5 gx-4">
+                                <div class="col-sm-6">
+                                    <h5>UX Designer</h5>
+                                    <!-- <hr class="text-primary my-2"> -->
+                                    <p class="text-primary mb-1">2021 - Present</p>
+                                    <h6 class="mb-0">Freelance (Figma, Axure RP, Crazy Egg, Lucidchart)</h6>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5>Web Developer</h5>
+                                    <!-- <hr class="text-primary my-2"> -->
+                                    <p class="text-primary mb-1">2020 - Present</p>
+                                    <h6 class="mb-0">Freelance (HTML,CSS,JavaScript,React)</h6>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5>Data Analysis/Visualization</h5>
+                                    <!-- <hr class="text-primary my-2"> -->
+                                    <p class="text-primary mb-1">NYSC 2023</p>
+                                    <h6 class="mb-0">HISP NIGERIA</h6>
+                                </div>
+                                
+                                <div class="col-sm-6">
+                                    <h5>DHIS2 Implementation/Customization</h5>
+                                    <!-- <hr class="text-primary my-2"> -->
+                                    <p class="text-primary mb-1">2022 - Present</p>
+                                    <h6 class="mb-0">HISP Nigeria</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="row gy-5 gx-4">
+                                <div class="col-sm-6">
+                                    <h5>B.Sc Computer Science</h5>
+                                    <!-- <hr class="text-primary my-2"> -->
+                                    <p class="text-primary mb-1">2016 - 2021</p>
+                                    <h6 class="mb-0">Benue State University, Makurdi</h6>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5>Diploma in Computer Applications</h5>
+                                    <!-- <hr class="text-primary my-2"> -->
+                                    <p class="text-primary mb-1">2015</p>
+                                    <h6 class="mb-0">Kenkul Global Computers, Enugu State </h6>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5>Senior Secondary Certificate Examination (SSCE)</h5>
+                                    <!-- <hr class="text-primary my-2"> -->
+                                    <p class="text-primary mb-1">2006 - 2012</p>
+                                    <h6 class="mb-0">Mbayion Comprehensive College, Gboko-west. Benue State.</h6>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5>DHIS2 Certification Courses</h5>
+                                    <!-- <hr class="text-primary my-2"> -->
+                                    <p class="text-primary mb-1">2022</p>
+                                    <h6 class="mb-0">DHIS2 Online Academy</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Expertise End -->
+
+
+    <!-- Service Start -->
+    <div class="container-fluid " id="service">
+        <h1 class="display-5 mb-0 text-center">My Services</h1>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-2 p-lg-5">
+                        <div class="bg-icon flex-shrink-0 mb-3">
+                            <i class="fa fa-code fa-2x text-dark"></i>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3">Website Development</h4>
+                            <!-- <h6 class="mb-3">Start from <span class="text-primary">$199</span></h6> -->
+                            <span>I'm skilled in HTML, CSS, JavaScript, and React, which allows me to build a wide range of websites, from simple landing pages to complex web applications. I'm also a creative thinker and have a knack for coming up with innovative solutions to web development challenges. I'm always looking for new ways to improve my skills and stay up-to-date with the latest web development trends.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon flex-shrink-0 mb-3">
+                            <i class="fas fa-sharp fa-layer-group fa-2x text-dark"></i>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3">DHIS2 Design and Implementation</h4>
+                            <!-- <h6 class="mb-3">Start from <span class="text-primary">$199</span></h6> -->
+                            <span>As a DHIS2 Implementer, i do the following; <br>DHIS2 Customization and Design <br>Installation and Configuration <br> Data Model Development <br> Data Migration and Integration <br> Custom Report and Dashboard Development <br> Ongoing Support and Maintenance <br> System Testing <br> User training and many more. </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon flex-shrink-0 mb-3">
+                            <i class="fa fa-solid fa-chart-line fa-2x text-dark"></i>
+                        </div>
+                        
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3">Data Analysis/Visualiztion</h4>
+                            <span>As a data analyst, I am proficient in Python, Excel, MySQL, and Power BI, enabling me to collect, clean, analyze, and visualize data effectively. I am adept at extracting meaningful insights from complex datasets and transforming them into actionable business intelligence.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon flex-shrink-0 mb-3">
+                            <i class="fa fa-laptop-code fa-2x text-dark"></i>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3">UI/UX Design</h4>
+                            <!-- <h6 class="mb-3">Start from <span class="text-primary">$199</span></h6> -->
+                            <span>I am a UI/UX designer and user researcher who utilizes technologies such as Figma, Axure RP, Crazy Egg, and Lucidchart and others, to create user-friendly websites and applications. I am passionate about creating products that are both beautiful and functional.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Projects Start -->
+    <div class="container-xxl pb-2 pt-lg-2" id="project">
+        <div class="container">
+            <h1 class="display-5 mb-5 text-center">Few of my Projects</h1>
+            <!-- <div class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6">
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <ul class="list-inline mx-n3 mb-0" id="portfolio-flters">
+                        <li class="mx-3 active" data-filter="*">All Projects</li>
+                        <li class="mx-3" data-filter=".first">UI/UX Design</li>
+                        <li class="mx-3" data-filter=".second">Graphic Design</li>
+                    </ul>
+                </div>
+            </div> -->
+            <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-4 col-md-6 portfolio-item first">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/Bookmark_manager.PNG" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary  border-2 mx-1" href="img/Bookmark_manager.PNG" data-lightbox="portfolio"><i class="fa fa-eye"></i>View image</a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://bookmark-mannager.netlify.app/" target="_blank"><i class="fa fa-link"></i>Visit site</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item second">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/news_portal.PNG" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/news_portal.PNG" data-lightbox="portfolio"><i class="fa fa-eye"></i>View image</a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" id="visitSiteButton" href="#">Visit site</a>
+
+<script>
+  const visitSiteButton = document.getElementById('visitSiteButton');
+
+  visitSiteButton.addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default link behavior
+
+    const popup = document.createElement('div');
+    popup.classList.add('popup');
+    popup.textContent = 'This site uses a Dev API key and can\'t be viewed, Production API keys does a better job';
+
+    document.body.appendChild(popup);
+
+    // Add CSS styles to position and style the popup
+    popup.style.position = 'fixed';
+    popup.style.top = '50%';
+    popup.style.left = '50%';
+    popup.style.transform = 'translate(-50%, -50%)';
+    popup.style.backgroundColor = 'rgba(0, 0, 0, 0.5)'; /* Darken the background */
+    popup.style.padding = '20px';
+    popup.style.border = '1px solid #ccc';
+    popup.style.borderRadius = '5px';
+    popup.style.color = '#fff';
+    popup.style.fontSize = '16px';
+    popup.style.textAlign = 'center';
+
+    setTimeout(function() {
+      document.body.removeChild(popup); // Remove the popup after 2 seconds
+    }, 3000);
+  });
+</script>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item first">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/Budget_tracker.PNG" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/Budget_tracker.PNG" data-lightbox="portfolio"><i class="fa fa-eye"></i>View image</a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://budget-trackker.netlify.app/" target="_blank"><i class="fa fa-link"></i>Visit site</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item second">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid " src="img/Yum_eats.PNG" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/Yum_eats.PNG" data-lightbox="portfolio"><i class="fa fa-eye"></i>View image</a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://yumm-eats.netlify.app/" target="_blank"><i class="fa fa-link"></i>Visit site</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item first">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/Project_manager.PNG" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/Project_manager.PNG" data-lightbox="portfolio"><i class="fa fa-eye"></i>View image</a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://project-managger.netlify.app/" target="_blank"><i class="fa fa-link"></i>Visit site</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item second">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/Manage-list.PNG" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/Manage-list.PNG" data-lightbox="portfolio"><i class="fa fa-eye"></i>View image</a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://todo-list-managerr.netlify.app/" target="_blank"><i class="fa fa-link"></i>Visit site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Projects End -->
+
+
+    <!-- Team Start -->
+    <div class="container-fluid py-5 my-5" id="testimonial">
+        <div class="container-fluid py-5">
+            <h1 class="display-5 text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">People I have worked with</h1>
+            <div class="row justify-content-center">
+                <div class="col-lg-3 d-none d-lg-block">
+                    <div class="testimonial-left h-100">
+                        <img class="img-fluid wow fadeIn" data-wow-delay="0.1s" src="img/testimonial-1.jpeg" alt="">
+                        <img class="img-fluid wow fadeIn" data-wow-delay="0.3s" src="img/testimonial-2.jpeg" alt="">
+                        <img class="img-fluid wow fadeIn" data-wow-delay="0.5s" src="img/testimonial-3.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="testimonial-item text-center">
+                            <div class="position-relative mb-5">
+                                <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto" src="img/testimonial-1.jpeg" alt="">
+                                <div class="testimonial-icon">
+                                    <i class="fa fa-quote-left text-primary"></i>
+                                </div>
+                            </div>
+                            <p class="fs-5 fst-italic">
+                                A data-driven professional with expertise in DHIS2 implementation, database administration, and data analysis. Passionate about using data to solve real-world problems and make informed decisions, also a strong communicator and collaborator, and have a proven track record of success in leading and managing complex projects</p>
+                            <hr class="w-25 mx-auto">
+                            <h5>Nongu Joseph</h5>
+                            <span>DBA, DHIS2 Implementer,Technical Support Expert and Data Analyst</span>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <div class="position-relative mb-5">
+                                <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto" src="img/testimonial-2.jpeg" alt="">
+                                <div class="testimonial-icon">
+                                    <i class="fa fa-quote-left text-primary"></i>
+                                </div>
+                            </div>
+                            <p class="fs-5 fst-italic">A creative and technical professional with expertise in video editing, software development, and data visualization. He is passionate about using technology to tell stories and communicate ideas. He is also a strong problem-solver and have a proven track record of success in developing innovative solutions. </p>
+                            <hr class="w-25 mx-auto">
+                            <h5>Onaji Johnson</h5>
+                            <span>Video Editor, Software Developer and Data Visualizer</span>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <div class="position-relative mb-5">
+                                <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto" src="img/testimonial-3.jpeg" alt="">
+                                <div class="testimonial-icon">
+                                    <i class="fa fa-quote-left text-primary"></i>
+                                </div>
+                            </div>
+                            <p class="fs-5 fst-italic">Visually creative and analytically minded, bridges the gap between data and design while uncovering insights through research and storytelling, creates engaging visuals that inform and inspire. A valuable asset for any organization</p>
+                            <hr class="w-25 mx-auto">
+                            <h5>Okobia Daniel</h5>
+                            <span>Researcher and Graphics Designer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 d-none d-lg-block">
+                    <div class="testimonial-right h-100">
+                        <img class="img-fluid wow fadeIn" data-wow-delay="0.1s" src="img/testimonial-1.jpeg" alt="">
+                        <img class="img-fluid wow fadeIn" data-wow-delay="0.3s" src="img/testimonial-2.jpeg" alt="">
+                        <img class="img-fluid wow fadeIn" data-wow-delay="0.5s" src="img/testimonial-3.jpeg" alt=""> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Contact Start -->
+    <div class="container-xxl pb-5" id="contact">
+        <div class="container py-5">
+            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6">
+                    <h1 class="display-5 mb-0">Let's Work Together</h1>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <a class="btn btn-primary py-3 px-5">Say Hello Below</a>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="mb-2">My office:</p>
+                    <h3 class="fw-bold fs-5">NO 1 Etang Obuli Crescent, Jabi, FCT Abuja</h3>
+                    <hr class="w-100">
+                    <p class="mb-2">Call me:</p>
+                    <h3 class="fw-bold fs-5">+234 81 684 777 11</h3>
+                    <hr class="w-100">
+                    <p class="mb-2">Mail me:</p>
+                    <h3 class="fw-bold fs-5">kwenevsteve@gmail.com</h3>
+                    <hr class="w-100">
+                    <p class="mb-2">Say hi to me:</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-primary me-2" href="https://twitter.com/GhentleSteve" target="_blank"><i class="fa fa-brands fa-x-twitter"></i></a>
+                        <a class="btn btn-square btn-primary me-2" href="https://www.facebook.com/Kwenev.steve" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-primary me-2" href="https://www.linkedin.com/in/stephen-kwenev-85315b278/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-square btn-primary me-2" href="https://github.com/Ghentlesteve" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <p class="mb-4 fw-bold">I take pride in quality and quick delivery of projects anywhere, anytime, any day. Your desire is my  satisfaction. Send a message to contact me</p>
+                    <div id="successMessage" style="display: none;"></div>
+                    <form action="https://formspree.io/f/xjvqdooa" method="POST" id="contactForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name" name="name">
+                                    <label for="name">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email" name="email">
+                                    <label for="email">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
+                                    <label for="subject">Subject</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px" name="massage"></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary py-3 px-5" type="submit" id="sendMessageButton">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+<script>
+const sendMessageButton = document.getElementById('sendMessageButton');
+const contactForm = document.getElementById('contactForm');
+
+sendMessageButton.addEventListener('submit', function(event) {
+  // Submit the form to the server
+//   contactForm.submit();
+
+  // Reset the form immediately
+  contactForm.reset();
+});
+</script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+    <!-- Map Start -->
+    <div class="container-xxl pt-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container-xxl pt-5 px-0">
+            <div class="bg-dark">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.0060573919795!2d7.410255574236013!3d9.063210888454103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e74e6eeb8b1bf%3A0x892d37f0556f5057!2s1%20Etang%20Obuli%20Cres%2C%20Jabi%20900108%2C%20Abuja%2C%20Federal%20Capital%20Territory!5e0!3m2!1sen!2sng!4v1700475530408!5m2!1sen!2sng" 
+                frameborder="0" style="width: 100%; height: 450px; border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">             
+                </iframe>
+            </div>
+        </div>
+    </div>
+    <!-- Map End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid bg-dark text-white py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom text-secondary" href="#">Steve's Personal Portfolio</a>, All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                      
+                        <!-- Designed By <a class="border-bottom text-secondary" href="https://htmlcodex.com">HTML Codex</a>
+                        <br>Distributed By: <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-md-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
